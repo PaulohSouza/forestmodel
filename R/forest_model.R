@@ -82,10 +82,10 @@
 #'
 #' panels <- list(
 #'   list(width = 0.03),
-#'   list(width = 0.1, display = ~variable, fontface = "bold", heading = "Variable"),
+#'   list(width = 0.1, display = ~variable, fontface = "bold", heading = "Variável"),
 #'   list(width = 0.1, display = ~level),
 #'   list(width = 0.05, display = ~n, hjust = 1, heading = "N"),
-#'   list(width = 0.05, display = ~n_events, width = 0.05, hjust = 1, heading = "Events"),
+#'   list(width = 0.05, display = ~n_events, width = 0.05, hjust = 1, heading = "Eventos"),
 #'   list(
 #'     width = 0.05,
 #'     display = ~ replace(sprintf("%0.1f", person_time / 365.25), is.na(person_time), ""),
@@ -93,11 +93,11 @@
 #'   ),
 #'   list(width = 0.03, item = "vline", hjust = 0.5),
 #'   list(
-#'     width = 0.55, item = "forest", hjust = 0.5, heading = "Hazard ratio", linetype = "dashed",
+#'     width = 0.55, item = "forest", hjust = 0.5, heading = "Razão de Risco", linetype = "dashed",
 #'     line_x = 0
 #'   ),
 #'   list(width = 0.03, item = "vline", hjust = 0.5),
-#'   list(width = 0.12, display = ~ ifelse(reference, "Reference", sprintf(
+#'   list(width = 0.12, display = ~ ifelse(reference, "Referência", sprintf(
 #'     "%0.2f (%0.2f, %0.2f)",
 #'     trans(estimate), trans(conf.low), trans(conf.high)
 #'   )), display_na = NA),
