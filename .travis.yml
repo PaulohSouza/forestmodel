@@ -1,0 +1,18 @@
+# Sample .travis.yml for R projects
+
+language: r
+r:
+   - oldrel
+   - release
+   - devel
+cache: packages
+sudo: false
+warnings_are_errors: true
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+after_failure:
+    - cat /home/travis/build/NikNakk/forestmodel/forestmodel.Rcheck/00install.out
